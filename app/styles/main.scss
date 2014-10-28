@@ -9,18 +9,69 @@ body {
   color: #333;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
+ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  @include outer-container;
+  max-width: 1024px;
+  font-size: 62.5%;
+
   h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+    font-size: 6em;
+  }
+
+  ul {
+    @include span-columns(12);
+  }
+
+  li {
+    @include span-columns(3 of 12);
+    @include omega(4n);
+    @include pad(2px);
+    margin-bottom: 20px;
+    padding-top: 23.2317613015%;
+    background-color: lightgrey;
+    position: relative;
+  }
+
+  div {
+    width: 40%;
+    padding-top: 40%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    //Iterate all animations until clicked off
+    -webkit-animation-iteration-count: infinite;
+  }
+
+  #jump {
+    background-color: blue;
+  }
+
+  #ch-color {
+    background-color: green;
+  }
+
+  #grow {
+    background-color: red;
+  }
+
+  #shrink {
+    background-color: yellow;
   }
 }
+
+

@@ -1,3 +1,13 @@
-## Yo, I'm a Readme
+## jQuery Animation Playground
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+I built this to experiment with jQuery animations in a grid layout.
+
+#### Libraries used:
+  * jQuery
+  * Bourbon/Neat
+  * Modernizr
+
+#### How to use it
+  * Clone my repo
+  * Run `npm install`
+  * Run `bower install`
